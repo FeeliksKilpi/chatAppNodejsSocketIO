@@ -3,14 +3,14 @@
   <head>
     <title>Socket.IO chat</title>
     <style>
-      body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      body { display: flex; flex-direction: column; width: 500px; height: 500px; margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 28px;}
 
-      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; position: fixed; bottom: 0; left: 0; right: 0; display: flex; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); }
-      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+      #form { background: rgba(0, 0, 0, 0.15); padding: 0.25rem; bottom: 0; left: 0; right: 0; display: flex; justify-items: center; height: 3rem; box-sizing: border-box; backdrop-filter: blur(10px); height: 100px;; }
+      #input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; font-size: 28px;}
       #input:focus { outline: none; }
-      #form > button { background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; }
+      #form > button { background: rgb(65, 184, 247); border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; font-size: 28px;}
 
-      #messages { list-style-type: none; margin: 0; padding: 0; }
+      #messages { display: flex; flex-direction: column; list-style-type: none; margin: 0; padding: 0; }
       #messages > li { padding: 0.5rem 1rem; }
       #messages > li:nth-child(odd) { background: #efefef; }
     </style>
